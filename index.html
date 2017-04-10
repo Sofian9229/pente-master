@@ -1,0 +1,83 @@
+<html>
+	<head>
+		<title> Pente </title>
+		 <meta charset="UTF-8">
+		<link href='https://fonts.googleapis.com/css?family=Voltaire' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="shortcut icon" href="favicon.ico"/>
+	</head>
+
+	<body >
+
+		<div id="title" align="center">
+			<small id="noMercy"> Jeu </small> </br>
+			<div id="penteSpan">
+				<span id="pente"> 
+					<b> PENTE </b> 
+				</span>
+			</div>
+			<h3 class="shadow" id="playBtn" > Jouez </h3>
+		</div>
+
+		<div id="win">
+
+		</div>
+
+		<div>
+
+			<div class="shadow cap-area first" id="plr1Caps">
+				<!-- D3 Will populate -->
+				<div class="content">
+					<!-- Player 1's Captures. -->
+				</div>
+			</div>
+
+			<div class="shadow" id="gameboard" >
+				<!-- D3 Will populate -->
+			</div>
+
+			<div class="shadow cap-area second" id="plr2Caps">
+				<!-- D3 Will populate -->
+				<div class="content">
+					<!-- Player 2's Captures. -->
+				</div>
+			</div>
+
+		</div>
+	
+		<div id="info">
+			<span id="sign" class="glyphicon glyphicon-question-sign"> </span>
+		</div>
+
+		<div id="infoContent" class="shadow" align="center">
+			<a href="http://www.pente.net/instructions.html" target="_blank"> Comment Jouer ?</a>
+			<small>
+				<div id="authors" disabled="true">
+					Comment Jouer ?
+					<a id="sofian" target="_blank"> Hue Sofian</a> 
+					,
+					<a id="david" target="_blank"> Amiech David </a>
+					,
+					<a id="david" target="_blank"> Aboudou Mohamed </a>
+					
+					<a id="david" target="_blank"> El Fatnassi Chakib </a>
+
+				</div>
+			</small>
+		</div>
+	</body>
+
+	<!-- Deps -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"> </script>
+	<script src="logic.js"> </script>
+	<script src="js/globals.js"></script>
+	<script src="js/play-btn.js"></script>
+	<script src="vis.js"> </script>
+	<script src="js/captures.js"></script>
+	<script src="js/fancy-lines.js"></script>
+	<script src="js/info.js"></script>
+	<script src="js/win-msg.js"></script>
+	<script src="ai.js"></script>
+</html>
